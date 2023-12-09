@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<link rel="stylesheet" href="style.css">
+<title>MusicPedia</title>
+
+<head>
+    <div class = "header">
+        <img src = "Garage_band_43405.png" onclick="play_pinch()">
+
+        <script>
+            function play_pinch() {
+                var audio = new Audio();
+                audio.src = 'flamenco.mp3';
+                audio.play();
+            }
+        </script>
+
+        <ul class = "menu">
+            <li class="current"><a href="#">Главная страница</a></li>
+            <li><a href="#">Упражнения</a></li>
+            <li><a href="#">Теория</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><button>Войти</button></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+</head>
+
+<body>
+    <h1>Главная</h1>
+    <span class = "about">Добро пожаловать на MusicPedia!</span>
+    <span class = "about_further">Музыкальная теория, актуальные новости музыкального мира</span>
+    <span class="News"><br><br>Новости</span>
+    <div class="bord">
+        <style>
+            .muztorg {
+                height: 60%;
+                width: 60%;
+            }
+
+            .learn_more1 {
+                align-items: flex-end;
+                width: 200px;
+                height: 50px;
+                font-size: 20px;
+                font-family: 'Consolas';
+                align-items: end;
+                font-weight: bold;
+            }
+
+            .info {
+                font-family: 'Consolas';
+                font-weight: bold;
+                justify-content: flex-start;
+                font-size: 25px;
+            }
+
+            .skidka {
+                list-style-type: none;
+            }
+
+            .learn_more1 {
+                transition: 1s;
+            }
+
+            .learn_more1:hover {
+                scale: 1.2;
+            }
+        </style>
+        <ul class = "skidka">
+            <li><img src="sale.jpg" class="muztorg"></li>
+            <br>
+            <li><span class="info">Скидки в магазине Музторг!!!</span></li>
+            <br>
+            <li><button class="learn_more1">Подробнее</button></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+h1 {
+    font-size: 60px;
+    font-family: 'Consolas';
+    display: flex;
+    justify-content: center;
+}
+
+
+.header ul {
+    font-size: 35px;
+    font-family: 'Consolas';
+    display: flex;
+    list-style-type: none;
+    color: #6e563a;
+}
+
+.menu li {
+    text-indent: 25px;
+    color: #6e563a;
+    transition: 1s;
+}
+
+.menu li:hover {
+    transform: scale(0.9);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li:hover {
+    background-color: rgb(252, 203, 68);
+    border-radius: 12px;
+    border: 1px;
+}
+
+li button {
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Consolas';
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.about {
+    font-size: 30px;
+    font-family: 'Consolas';
+    display: flex;
+    justify-content: center;
+}
+
+.about_further  {
+    font-size: 30px;
+    font-family: 'Consolas';
+    display: flex;
+    justify-content: center;
+}
+
+.News {
+    color: black;
+    font-weight: bolder;
+    font-size: 45px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Consolas';
+    justify-content: center;
+}
+
+.bord {
+    border: 2px solid black;
+    display: flex;
+    background-color: #fbe7cf;
+}
+
+.header {
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #fff2e4;
+}
+
+.current a {
+    color: #523900;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.header img {
+    width: 6%;
+    height: 6%;
+    padding: 1%;
+}
+
+@keyframes shake-guitar {
+    0% { transform: translate(-8px, -14px); }
+    33% { transform: translate(-10px, -14px); }
+    66% { transform: translate(-10px, -16px); }
+    100% { transform: translate(-8px, -16px); }
+}
+
+.header img:hover {
+    animation: shake-guitar .2s infinite alternate;
+}
+
+.menu ul {
+    display: flex;
+    align-items: flex-start;
+}
